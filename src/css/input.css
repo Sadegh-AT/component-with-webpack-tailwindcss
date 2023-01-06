@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "RedHat";
+    src: url("https://fonts.google.com/specimen/Red+Hat+Display");
+}
