@@ -4,7 +4,7 @@
 
 ## Installation
 
-Use the git to pull this project, and follow this code to install npm module:
+To install the npm module for this project, use git to pull the project, and then follow the code provided:
 
 ```bash
 npm i
@@ -12,7 +12,7 @@ npm i
 
 ## Usage
 
-after installation you should write this code so you can build the project and see resault
+After installation, use the following code to build the project and view the result:
 
 ```bash
 npm run tailwindwatch
