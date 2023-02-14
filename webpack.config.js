@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
     mode: "production",
-    entry: {
+    entry: { // js file should be here
         bundle: "./src/js/index.js",
     },
     output: {
@@ -27,7 +27,7 @@ module.exports = {
                 type: "asset/resource",
             },
             {
-                test: /\.(ttf)$/i,
+                test: /\.(eot|svg|ttf|woff|woff2)$/i,
                 type: "asset/resource",
                 generator: {
                     filename: "fonts/[name][ext]",
@@ -44,7 +44,7 @@ module.exports = {
             title: "Index Page",
             filename: "index.html",
             template: "./src/index.html",
-            chunks: ["bundle"],
+            chunks: ["bundle"], // name of js file for this html page
         }),
 
         new CleanWebpackPlugin(),
